@@ -1,6 +1,6 @@
 # Sample project in GOLang - Rest API
 
-<img style="float:left;" src="https://bit.ly/2HS3BiJ"/> <img style="float:left;" width="300" height="300" src="https://bit.ly/2S9c1qO"/>
+<img style="float:left;" width="300" height="300" src="https://bit.ly/2HTmlP2"/> <img style="float:left;" width="300" height="300" src="https://bit.ly/2S9c1qO"/>
 
 ## Description
 In the context of HackDays for **TieFighters Team**, this project serves as a POC and sample project of a restful API written in GOLang. This serves also the purpose of introduction to a new language (GO).
@@ -19,6 +19,12 @@ In the context of HackDays for **TieFighters Team**, this project serves as a PO
 * Understand structs, types and vars in Go
 * Introduction to a possible vendoring system, govendor (https://github.com/kardianos/govendor)
 * Understand how to build and deploy a docker container with a Go Project
+
+## Test the application
+```
+cd go-api
+docker-compose up
+```
 
 ## Restful API Examples
 ### Get Tags
