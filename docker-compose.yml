@@ -1,0 +1,29 @@
+version: "3.2"
+
+services:
+  app:
+    image: golang:latest
+    container_name: goapi_app
+    volumes:
+      - .:/go/src/go-api
+    working_dir: /go/src/go-api
+    command: go run main.go
+    expose:
+      - 8000
+    ports:
+      - 8092:8000
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: goapi_mongo
+    expose:
+      - 27017
+    ports:
+      - 27017:27017
+    volumes:
+      - "mongo:/data/db"
+
+volumes:
+  mongo:
